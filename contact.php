@@ -37,7 +37,7 @@
 				$email_subject = "Your email subject line";
 				 
 				   
-				$first_name = $_POST['first_name']; // required 
+				$name = $_POST['name']; // required 
 				$email_from = $_POST['email']; // required
 				$subject = $_POST['subject']; // required
 				$comments = $_POST['message']; // required
@@ -51,7 +51,7 @@
 				}
 				 
 				 
-				$email_message .= "Name: ".clean_string($first_name)."\n";
+				$email_message .= "Name: ".clean_string($name)."\n";
 				$email_message .= "Email Address: ".clean_string($email_from)."\n";
 				$email_message .= "Subject: ".clean_string($subject)."\n";
 				$email_message .= "Message: ".clean_string($comments)."\n";
@@ -66,7 +66,9 @@
 				'X-Mailer: PHP/' . phpversion();
 				 
 				@mail($email_to, $email_subject, $email_message, $headers); 
-				 
+
+				 echo json_encode($arrResult);
+
 				?>
 				 
 				<!-- Message sent! (change the text below as you wish)-->
@@ -76,7 +78,7 @@
 							<div id="form_response" class="text-center">
 								<img class="img-responsive" src="img/thumbs/mail_sent.png" alt="image" />
 								<h1>Congratulations!!!</h1>
-								<p>Thank you <b><?=$first_name;?></b>, your message is sent!</p>
+								<p>Thank you for signing up</p>
 								<a class="btn btn-primary btn-lg" href="index.html">Back To The Site</a>
 							</div>
 						</div>	

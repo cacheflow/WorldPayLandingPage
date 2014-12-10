@@ -35,7 +35,9 @@ Tags: responsive, html5 template, one page, landing, startup, business, company,
 /*------------------------------------------*/
 /*	 Preload Animation 
 /*------------------------------------------*/
-
+body{
+	background-color: #1A1E23;
+}
 #preloader{
 	position: fixed;
 	top:0;
@@ -59,6 +61,7 @@ Tags: responsive, html5 template, one page, landing, startup, business, company,
 	background-size:75px 75px;
 } 
    
+
 /*------------------------------------------*/
 /*	 Parallax Settings
 /*------------------------------------------*/
@@ -71,9 +74,11 @@ Tags: responsive, html5 template, one page, landing, startup, business, company,
 
 #intro { 
 	background-image: url(http://www.worldpay.com/sites/default/files/O0066_Instore%20Shopper%20Pin%20Pad_HOME.jpg); 
-	border-radius: 5px;
-	background-size: 100%; 
+	background-size: cover; 
 }
+
+
+
 
 .parallax {
 	background-attachment: fixed !important;
@@ -804,94 +809,11 @@ textarea {
 /*	 Footer Icons Hover 
 /*------------------------------------------*/
 
-.ico-facebook:hover {background-color: #3b5998;color: #f8f8f8;}
-.ico-twitter:hover {background-color: #00a9ed;color: #f8f8f8;}
-.ico-google-plus:hover {background-color: #cd1111;color: #f8f8f8;}
-.ico-linkedin:hover {background-color: #015886;color: #f8f8f8;}
-.ico-dribbble:hover {background-color: #d92d84;color: #f8f8f8;}
-.ico-instagram:hover {background-color: #beb3a8;color: #f8f8f8;}
-.ico-pinterest:hover {background-color: #ac281a;color: #f8f8f8;}
-.ico-dropbox:hover {background-color: #008ad2;color: #f8f8f8;}
-.ico-skype:hover {background-color: #00a9ed;color: #f8f8f8;}
-.ico-youtube:hover {background-color: #cd1b20;color: #f8f8f8;}
-.ico-tumblr:hover {background-color: #3a5976;color: #f8f8f8;}
-.ico-vimeo:hover {background-color: #00adee;color: #f8f8f8;}
-.ico-flickr:hover {background-color: #d2d2d2;color: #f8f8f8;}
-.ico-github:hover {background-color: #222;color: #f8f8f8;}
-.ico-renren:hover {background-color: #364a83;color: #f8f8f8;}
-.ico-vk:hover {background-color: #3b5998;color: #f8f8f8;}
-.ico-xing:hover {background-color: #015f5e;color: #f8f8f8;}
-.ico-weibo:hover {background-color: #be4443;color: #f8f8f8;}
-.ico-rss:hover {background-color: #ff6600;color: #f8f8f8;}
 
 /*------------------------------------------*/
 /*	 Footer Newsletter Form
 /*------------------------------------------*/
 
-.subscribe-form {
-	margin: 5px auto 0;
-    position: relative;
-    z-index: 10;
-	width: 90%;
-}
-
-#newsletter_form p {
-	color: #666;
-	font-size: 13px;
-	line-height: 16px;
-	font-family: 'Lato', sans-serif;
-	text-align: center;
-	margin-top: 10px;
-}
-
-#newsletter_form p span {
-	color: #428bca;
-}
-
-.subscribe-input {
-	width: 68%;
-    height: 30px;
-	background-color: #aaa;
-	color: #ddd;
-	font-size: 14px;
-    font-weight: 300;
-	padding-left: 10px;
-	border: none;
-}
-
-.subscribe-submit {
-	width: 32%;
-	height: 30px;
-	background: #383e46;
-    color: #fff;
-	font-size: 12px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
-	text-decoration:none;
-	text-transform: uppercase;
-	text-align:center;
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border:none;
-    cursor: pointer;
-    outline: 0;
-	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	-ms-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
-}
-
-.subscribe-submit:active {
-    outline: 0;
-}
-
-.subscribe-submit:hover {
-	background: #428bca;
-}
 
 
  

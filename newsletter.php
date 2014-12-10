@@ -27,11 +27,11 @@
 			header('Expires: ' . gmdate('r', 0));
 			header('Content-type: application/json');
 
-			$apiKey 	= '5d8e5d657e472b579d7f8fa448eca38a-us9'; - // How get your Mailchimp API KEY - http://kb.mailchimp.com/article/where-can-i-find-my-api-key
+			$apiKey 	= '47aceea62495850641c44bc6be89b3c3-us9'; - // How get your Mailchimp API KEY - http://kb.mailchimp.com/article/where-can-i-find-my-api-key
 			$listId 	= '998c7bf428'; - // How to get your Mailchimp LIST ID - http://kb.mailchimp.com/article/how-can-i-find-my-list-id
 			$submit_url	= "http://us9.api.mailchimp.com/2.0/?method=listSubscribe"; - // Replace us2 with your actual datacenter
 
-			$double_optin = false;
+			$double_option = false;
 			$send_welcome = false;
 			$email_type = 'html';
 			$email = $_POST['email'];
@@ -41,7 +41,7 @@
 			    'email_address' => $email,
 			    'apikey' => $apiKey,
 			    'id' => $listId,
-			    'double_optin' => $double_optin,
+			    'double_option' => $double_option,
 			    'send_welcome' => $send_welcome,
 				'merge_vars' => $merge_vars,
 			    'email_type' => $email_type
@@ -66,6 +66,7 @@
 			    $arrResult = array ('Got it, you have been added to our email list.');
 			}
 
+			echo json_encode($arrResult);
 
 
 
@@ -77,7 +78,7 @@
 							<div id="form_response" class="text-center">
 								<img class="img-responsive" src="img/thumbs/mail_sent.png" alt="image" />
 								<h1>Thank You</h1>
-								<p>You've been added to our mailing list.</p>
+							<p>You've been added to our mailing list.</p>
 								<a class="btn btn-primary btn-lg" href="index.html">Back To The Site</a>
 							</div>
 						</div>	
@@ -89,5 +90,4 @@
 	</body> 
 </html>
 
-echo json_encode($arrResult);
 
